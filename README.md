@@ -1,1 +1,1 @@
-# Custum-built-LLM
+# Custom-built-LLM
