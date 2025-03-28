@@ -1,5 +1,5 @@
-import torch
 import torch.nn as nn
+from config import GPT_CONFIG, DEVICE
 
 class TransformerBlock(nn.Module):
     def __init__(self, emb_dim, n_heads):
@@ -18,3 +18,7 @@ class GPTModel(nn.Module):
         
     def forward(self, inputs):
         pass
+
+def load_pretrained(model, path):
+    model.load_state_dict(torch.load(path, map_location=DEVICE))
+    return model.to(DEVICE)
