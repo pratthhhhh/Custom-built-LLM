@@ -96,7 +96,3 @@ python score.py --input "Your input text here"
 ## Contributing
 
 Feel free to submit issues and enhancement requests!
-
-## Author
-
-pratthhhhh
