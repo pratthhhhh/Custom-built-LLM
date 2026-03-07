@@ -5,6 +5,7 @@ from litgpt import LLM
 from tokenizer import format_instruction
 from config import DEVICE
 
+# Runs MMLU evaluation using litgpt
 def run_mmlu_evaluation(model_path: str, tasks: str = "mmlu_philosophy"):
     command = [
         "litgpt", "evaluate", model_path,
@@ -13,6 +14,7 @@ def run_mmlu_evaluation(model_path: str, tasks: str = "mmlu_philosophy"):
     ]
     subprocess.run(command, check=True)
 
+# Generates responses for the given dataset
 def generate_responses(model: LLM, dataset: List[Dict]) -> List[str]:
     responses = []
     progress = tqdm(dataset, desc="Generating Responses")
