@@ -72,8 +72,8 @@ python main.py --skip_train --lora_rank 16
 
 ## Dataset
 
-Fine-tuned on [tatsu-lab/alpaca](https://huggingface.co/datasets/tatsu-lab/alpaca) — 52K instruction-following examples in `instruction / input / output` format, with a 90/10 train/eval split.
+Fine-tuned on [tatsu-lab/alpaca](https://huggingface.co/datasets/tatsu-lab/alpaca) - 52K instruction-following examples in `instruction / input / output` format, with a 90/10 train/eval split.
 
 ## Notebook
 
-`test.ipynb` provides an interactive inference demo — load the checkpoint and run prompts cell by cell.
+`test.ipynb` provides an interactive inference demo - load the checkpoint and run prompts cell by cell.
